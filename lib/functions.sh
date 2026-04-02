@@ -22,3 +22,10 @@ find_large_files() {
     echo "=== Fichiers > ${size}Mo dans $dir ==="
     find "$dir" -type f -size +${size}M -exec ls -lh {} \;
 }
+
+# Supprime les fichiers temporaires du système
+clean_tmp() {
+    echo "=== Nettoyage des fichiers temporaires ==="
+    rm -rf /tmp/*
+    echo "✅ Dossier /tmp nettoyé !"
+}
