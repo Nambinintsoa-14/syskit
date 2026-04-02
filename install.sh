@@ -25,5 +25,4 @@ else
 fi
 
 echo "✅ Installation terminée ! Lancez : source ~/.bashrc"
-```
 
